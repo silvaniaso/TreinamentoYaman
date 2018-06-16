@@ -32,32 +32,37 @@ public class Application {
 
 	public void setBrowser() throws Exception {
 
-		switch (Application.appBrowser) {
-		case "CHROME":
-			Application.driver = new ChromeDriver();
-			break;
-		case "IEXPLORE":
-			Application.driver = new InternetExplorerDriver();
-			break;
-		case "FIREFOX":
-			Application.driver = new FirefoxDriver();
-			break;
-		default:
-			System.out.println("Browser não é válido!");
-		}
+//		switch (Application.appBrowser) {
+//		case "CHROME":
+//			Application.driver = new ChromeDriver();
+//			break;
+//		case "IEXPLORE":
+//			Application.driver = new InternetExplorerDriver();
+//			break;
+//		case "FIREFOX":
+//			Application.driver = new FirefoxDriver();
+//			break;
+//				
+//		default:
+//			System.out.println("Browser não é válido!");
+//		}
+//		
+		Application.driver = new ChromeDriver();
+		
 
 	}
 
 	public void setWebUrl() throws Exception {
 
-		switch (Application.appURL) {
-		case "MERCADO LIVRE":
-			Application.appURL = "https://www.mercadolivre.com.br/";
-			break;
-
-		default:
-			System.out.println("Sistema não é válido!");
-		}
+//		switch (Application.appURL) {
+//		case "MERCADO LIVRE":
+//			Application.appURL = "https://www.mercadolivre.com.br/";
+//			break;
+//
+//		default:
+//			System.out.println("Sistema não é válido!");
+//		}
+		Application.appURL = "https://www.mercadolivre.com.br/";
 
 	}
 
